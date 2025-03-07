@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+class Bankaccount {
+private:
+    string accountholder;
+    double balance; // Fixed variable name
+
+public:
+    // Setter
+    void setAccountholder(string a) {
+        accountholder = a; 
+    }
+
+    // Getter for account holder
+    string getAccountholder() {
+        return accountholder;
+    }
+
+    // Getter for balance
+    double getBalance() {
+        return balance;
+    }
+};
+
+// main function should be outside the class
+int main() {
+    Bankaccount b1;
+    b1.setAccountholder("Sam Namu");
+    
+    cout << "Name is: " << b1.getAccountholder() << endl;
+
+    return 0;
+}
